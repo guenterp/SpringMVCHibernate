@@ -1,0 +1,19 @@
+environment: Netbeans 8, Spring 4, Hibernate 4, MySQL, Tomcat 7
+
+how to call:
+http://localhost:8080/SpringMVCHibernate/contacts
+
+DDL:
+on commandline start mysql shell by typing mysql.
+
+create database:
+mysql>	CREATE DATABASE IF NOT EXISTS MYTEST
+	DEFAULT CHARACTER SET utf8
+	DEFAULT COLLATE utf8_general_ci;
+
+create user and grant privileges to user:
+mysql>	CREATE USER gp@localhost IDENTIFIED BY 'pwd';
+mysql>	GRANT ALL PRIVILEGES ON *.* TO gp@localhost;
+
+execute setup.sql:
+mysql> source setup.sql (creates tables)
